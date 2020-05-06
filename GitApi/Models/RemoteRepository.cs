@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GitApi.Models
 {
-    public partial class RemoteRepositories
+    public partial class RemoteRepository
     {
         public Guid RemoteRepositoryId { get; set; }
         public string ServerPath { get; set; }

@@ -18,7 +18,7 @@ namespace GitApi.Models
         public virtual DbSet<AlreadyCheckoutLists> AlreadyCheckoutLists { get; set; }
         public virtual DbSet<ChangeFormRecords> ChangeFormRecords { get; set; }
         public virtual DbSet<CheckOutRecords> CheckOutRecords { get; set; }
-        public virtual DbSet<RemoteRepositories> RemoteRepositories { get; set; }
+        public virtual DbSet<RemoteRepository> RemoteRepositories { get; set; }
         public virtual DbSet<ShowBranchs> ShowBranchs { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
@@ -54,7 +54,7 @@ namespace GitApi.Models
                     .ValueGeneratedNever();
             });
 
-            modelBuilder.Entity<RemoteRepositories>(entity =>
+            modelBuilder.Entity<RemoteRepository>(entity =>
             {
                 entity.HasKey(e => e.RemoteRepositoryId);
 

@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace GitApi.Models
 {
-    public class ApplicationUser
+    public class QueryBranch
     {
+        public string BranchName { get; set; }
     }
 }
